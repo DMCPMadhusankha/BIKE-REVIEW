@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.EXIT">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/1062408.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e32d2d" fontSmoothingType="LCD" layoutX="149.0" layoutY="67.0" stroke="#171817" strokeType="OUTSIDE" text="HIGH CAPACITY BIKE REVIEW" wrappingWidth="379.77734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#dff51d" layoutX="46.0" layoutY="214.0" stroke="BLACK" strokeType="OUTSIDE" text="THANK YOU! MOTORBIKE LOVER" wrappingWidth="539.7367553710938">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

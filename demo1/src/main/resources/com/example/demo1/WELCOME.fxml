@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.SignUp">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/1062408.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="528.0" layoutY="362.0" mnemonicParsing="false" text="EXIT" textFill="#181717" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.04814814776182175" blue="0.7779012322425842" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Text fill="#e32d2d" fontSmoothingType="LCD" layoutX="139.0" layoutY="57.0" stroke="#171817" strokeType="OUTSIDE" text="HIGH CAPACITY BIKE REVIEW" wrappingWidth="379.77734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#dff51d" layoutX="77.0" layoutY="157.0" stroke="BLACK" strokeType="OUTSIDE" text="WELCOME! MOTORBIKE LOVER" wrappingWidth="503.73675537109375">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Text>
+      <Button layoutX="300.0" layoutY="238.0" mnemonicParsing="false" text="CONTINUE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Glow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.3943209946155548" green="1.0" blue="0.17407406866550446" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="291.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/7b736a33be802fc2e737e3df56b4ef0e.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
