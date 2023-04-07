@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hcbr.HelloController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" smooth="false">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/1062408%20-%20Copy.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#e32d2d" fontSmoothingType="LCD" layoutX="244.0" layoutY="40.0" stroke="#171817" strokeType="OUTSIDE" text="KAWASAKI" wrappingWidth="137.3773193359375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="331.0" fitWidth="553.0" layoutX="31.0" layoutY="55.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/Annotation%202023-04-04%20162756.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bck4" layoutX="24.0" layoutY="18.0" mnemonicParsing="false" onAction="#bck44" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow>
+                     <input>
+                        <Glow />
+                     </input>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.1172017753124237" green="0.9399999976158142" blue="0.10339999943971634" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
