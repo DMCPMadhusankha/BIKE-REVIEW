@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hcbr.HelloController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/1062408.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#e32d2d" fontSmoothingType="LCD" layoutX="149.0" layoutY="36.0" stroke="#171817" strokeType="OUTSIDE" text="CHOOSE YOUR DREAM BRAND" wrappingWidth="379.77734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="113.0" layoutY="67.0" prefHeight="310.0" prefWidth="475.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="kawa1" fitHeight="97.0" fitWidth="130.0" onMouseClicked="#kawa" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/K.jPG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="suz1" fitHeight="98.0" fitWidth="132.0" onMouseClicked="#suz" smooth="false" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/S.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hond1" fitHeight="101.0" fitWidth="134.0" onMouseClicked="#hond" pickOnBounds="true" smooth="false" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/H.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bmw" fitHeight="103.0" fitWidth="131.0" onMouseClicked="#bmw1" pickOnBounds="true" smooth="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/B.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="trum" fitHeight="99.0" fitWidth="135.0" onMouseClicked="#trum1" pickOnBounds="true" smooth="false" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/download.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ducat" fitHeight="97.0" fitWidth="133.0" onMouseClicked="#ducat1" pickOnBounds="true" smooth="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../../../../../../../../../needs/D.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Button fx:id="exit3" layoutX="539.0" layoutY="366.0" mnemonicParsing="false" onAction="#exit33" text="EXIT" textFill="#181717" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.04814814776182175" blue="0.7779012322425842" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="log2" layoutX="34.0" layoutY="28.0" mnemonicParsing="false" onAction="#log22" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow>
+                     <input>
+                        <Glow />
+                     </input>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.1172017753124237" green="0.9399999976158142" blue="0.10339999943971634" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hcbr.HelloController">
+   <children>
+      <ImageView fitHeight="403.0" fitWidth="607.0" layoutX="-3.0">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/1062408.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="528.0" layoutY="362.0" mnemonicParsing="false" text="EXIT" textFill="#181717" textOverrun="LEADING_WORD_ELLIPSIS" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="1.0" green="0.04814814776182175" blue="0.7779012322425842" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <PasswordField fx:id="pwd1" layoutX="211.0" layoutY="166.0" onAction="#pwd" prefHeight="26.0" prefWidth="199.0" promptText="            PASSWORD">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="fname1" layoutX="211.0" layoutY="87.0" onAction="#fname" prefHeight="26.0" prefWidth="199.0" promptText="         FIRST NAME">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Text fill="#e32d2d" fontSmoothingType="LCD" layoutX="139.0" layoutY="57.0" stroke="#171817" strokeType="OUTSIDE" text="HIGH CAPACITY BIKE REVIEW" wrappingWidth="379.77734375">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="48.0" fitWidth="174.0" layoutX="290.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../../../needs/7b736a33be802fc2e737e3df56b4ef0e.gif" />
+         </image>
+      </ImageView>
+      <TextField fx:id="lname1" layoutX="211.0" layoutY="125.0" onAction="#lname" prefHeight="26.0" prefWidth="199.0" promptText="         LAST NAME">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="email" layoutX="208.0" layoutY="209.0" onAction="#email1" prefHeight="26.0" prefWidth="199.0" promptText="              E-MAIL">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="chek1" layoutX="242.0" layoutY="260.0" mnemonicParsing="false" text="I AM NOT A ROBOT" textFill="#f7e91b">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="done" layoutX="287.0" layoutY="294.0" mnemonicParsing="false" onAction="#done1" text="DONE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow>
+                     <input>
+                        <Glow />
+                     </input>
+                  </Shadow>
+               </bumpInput>
+               <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.1172017753124237" green="0.9399999976158142" blue="0.10339999943971634" />
+                     </color>
+                  </Light.Distant>
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
